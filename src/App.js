@@ -2,6 +2,8 @@ import './App.css';
 import React ,{useState, useEffect} from "react";
 import Button from '@mui/material/Button';
 import Form from "./comp/form"
+import Login from "./comp/landingpage/landing.jsx"
+
 function App() 
 {
   const [name, setname] = useState("Home")
@@ -32,6 +34,8 @@ function App()
       </nav>
       <div className="body container pt-5">
       <h1>{name}</h1>
+      <br/>
+      <Login />
       <p>
         I have used useeffect hooks basics in this project. I have also used material ui to enhance its beauty.
       </p>
