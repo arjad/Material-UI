@@ -10,13 +10,13 @@ function App()
   const [age, setage] = useState(12)
   
   const arjad = () => {
-    setname("Home")
+    setname("expensive")
   }
   const anas = () => {
-    setname("About Page")
+    setname("cheap")
   }  
   const ali = () => {
-    setname("Conatct Page")
+    setname("2nd hand")
   }
 
   useEffect(()=>{
@@ -25,17 +25,21 @@ function App()
   },[name])
   return (
     <div className="App">
-      <nav className="container-fluid py-5 bg-dark">
-        <ul>
-        <li><Button className="Nav_btn"  variant="contained" onClick={arjad}>Home</Button></li>
-        <li><Button className="Nav_btn" variant="contained" onClick={anas}>About</Button></li>
-        <li><Button className="Nav_btn" variant="contained" onClick={ali}>Contact</Button></li>
-        </ul>
-      </nav>
+     
       <div className="body container pt-5">
-      <h1>{name}</h1>
+     
       <br/>
       <Login />
+      <nav className="container">
+      <ul>
+      <li><Button className="Nav_btn"  variant="contained" onClick={arjad}>Home</Button></li>
+      <li><Button className="Nav_btn" variant="contained" onClick={anas}>About</Button></li>
+      <li><Button className="Nav_btn" variant="contained" onClick={ali}>Contact</Button></li>
+      </ul>
+      <h2>selected item = {name}</h2>
+      <br/>
+      <br/>
+    </nav>
       <p>
         I have used useeffect hooks basics in this project. I have also used material ui to enhance its beauty.
       </p>

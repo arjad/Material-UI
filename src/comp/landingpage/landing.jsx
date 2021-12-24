@@ -1,16 +1,27 @@
 import React from 'react'
-import "./landing.css"
-export default function landing() {
-    const clicked=()=>{
+import "./landing.css";
+import FacebookIcon from '@mui/icons-material/Facebook';
+import GoogleIcon from '@mui/icons-material/Google';
 
-        alert("Login")
-    }
+export default function landing() 
+{
     return (<div>
         <div className="container-fluid landing_page">
 
         <div className="container ">
             <div className="row two_divs">
-                
+                <div className='mt-3 ml-5'>
+                  <button>
+                    facebook <FacebookIcon/>
+                  </button>
+                  <button >
+                    github
+                  </button>
+                  <button>
+                    google <GoogleIcon/>
+                  </button>
+             
+                </div>
                 <div className="login_div col-lg-6">
                     <h2>Login to your account</h2>
                     <form>
@@ -26,7 +37,7 @@ export default function landing() {
                         <input type="checkbox" class="form-check-input" id="remember"/>
                         <label class="form-check-label" for="remember"> Remember Me </label>
                       </div>
-                      <button type="submit" onClick={clicked} class="btn_login">Login</button>
+                      <button type="submit" class="btn_login">Login</button>
                     </form>
                 </div>
                 <div className="disclamer_div col-lg-6">

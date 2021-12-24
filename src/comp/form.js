@@ -5,7 +5,7 @@ import Button from '@mui/material/Button';
 export default function form() {
     return (
         <div className="container py-5 bg-light text-white border px-5">
-            <h1>Your Info </h1>
+            <h1 className='tesxt-center text-dark'>Your Info </h1>
             <TextField
               label="Name"
               type="text"
